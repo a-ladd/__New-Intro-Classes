@@ -1,8 +1,9 @@
-﻿  Athlete.cpp
-  Auto.cpp
-  Client.cpp
-  Main.cpp
-c:\users\thicks\desktop\new-intro-classes\main.cpp(255): warning C4101: 'Temp': unreferenced local variable
-  Utilities.cpp
-  Generating Code...
-  Project.vcxproj -> C:\Users\thicks\Desktop\New-Intro-Classes\Debug\Project.exe
+﻿  Main.cpp
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(265): warning C4477: 'scanf' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'long'
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(268): warning C4477: 'scanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'long'
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(271): warning C4477: 'scanf' : format string '%lf' requires an argument of type 'double *', but variadic argument 1 has type 'long'
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(274): warning C4477: 'scanf' : format string '%f' requires an argument of type 'float *', but variadic argument 1 has type 'long'
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(265): error C4700: uninitialized local variable 'NewNo' used
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(268): error C4700: uninitialized local variable 'NewCatalogNo' used
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(271): error C4700: uninitialized local variable 'NewCost' used
+c:\users\andrew\desktop\git\__new-intro-classes\main.cpp(274): error C4700: uninitialized local variable 'NewQuantity' used

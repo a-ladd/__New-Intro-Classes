@@ -30,7 +30,7 @@
 # include "Utilities.hpp"
 
 // ---------------------------------- Defines ------------------------------------ 
-# define BOOK_DIAGNOSTIC_LEVEL 1
+# define BOOK_DIAGNOSTIC_LEVEL 4
 
 //-----------------------------  Classes & Structs //-----------------------------
 //////////////////////////////////////////////////////////////////////////////////
@@ -224,13 +224,13 @@ void Book::Set(char NewTitle[], long NewNo, long NewCatalogNo,
 //////////////////////////////////////////////////////////////////////////////////
 //                                     Get                                      //
 //                                                                              //
-//  Purpose:  Set is an interactive function in which we will allow the user    //
+//  Purpose:  Get is an interactive function in which we will allow the user    //
 //            enter data from keyboard.                                         //
 //            The Name for the First Data Member will be:                       //
 //	                                                                            //
 //                  Enter Title [Hit Return/Enter To Exit]:                     //
 //	                                                                            //
-//	          This provides the user with an oB.ortunity to exit the function   //
+//	          This provides the user with an opportunity to exit the function   //
 //            without entering all of the data members; after all, they may     //
 //            have entered this function by mistake.                            //
 //                                                                              //
@@ -251,10 +251,37 @@ void Book::Set(char NewTitle[], long NewNo, long NewCatalogNo,
 //////////////////////////////////////////////////////////////////////////////////
 bool Book::Get(void)
 {
-	char
-		Temp[200];
-//-- You Do
-	return (VALID);
+
+	char NewTitle[] = "";
+
+	printf("Enter Book Title [Hit Return/Enter to Exit]..:");
+	scanf("%s", NewTitle);
+	if (NewTitle == "" || NewTitle == " ") return (INVALID); else {
+		
+		long NewNo, NewCatalogNo, NewCost, NewQuantity;
+
+		flush_stream(stdin);
+		printf("Enter Book No.............................:");
+		scanf("%lu", &NewNo);
+		flush_stream(stdin);
+		printf("Enter Catalog No..........................:");
+		scanf("%lf", NewCatalogNo);
+		flush_stream(stdin);
+		printf("Enter Cost................................:");
+		scanf("%lf", NewCost);
+		flush_stream(stdin);
+		printf("Enter Quantity............................:");
+		scanf("%f", NewQuantity);
+		strcpy_s(Title, NewTitle);
+		No = NewNo;
+		CatalogNo = NewCatalogNo;
+		Cost = NewCost;
+		Quantity = NewQuantity;
+		
+		return (VALID);
+		
+	}
+
 }
 # pragma endregion
 
