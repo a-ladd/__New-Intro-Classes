@@ -1,0 +1,8 @@
+﻿  Athlete.cpp
+  Auto.cpp
+  Client.cpp
+  Main.cpp
+c:\users\thicks\desktop\new-intro-classes\main.cpp(255): warning C4101: 'Temp': unreferenced local variable
+  Utilities.cpp
+  Generating Code...
+  Project.vcxproj -> C:\Users\thicks\Desktop\New-Intro-Classes\Debug\Project.exe
